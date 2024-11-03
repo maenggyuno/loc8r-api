@@ -1,0 +1,19 @@
+
+//- doctype html
+//- html
+//-   head
+//-     title= title
+//-     link(rel="stylesheet", href="/stylesheets/style.css")
+//-   body
+//-     h1= title
+//-     p.subtitle= message
+    
+
+
+//- layout.pug를 상속=확장함 따라서 block content밑의 내용이 layout.pug block content 밑으로 들어감 4장 20페이지
+
+extends layout 
+
+block content
+ h1= title 
+ p.subtitle Welcome to #{title}
